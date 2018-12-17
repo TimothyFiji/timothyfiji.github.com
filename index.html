@@ -24,24 +24,6 @@
 </head>
 <body data-spy="scroll" data-target=".navbar-collapse" data-offset="50">
 
-  <!-- Load Facebook SDK for JavaScript -->
-  <div id="fb-root"></div>
-  <script>(function(d, s, id) {
-    var js, fjs = d.getElementsByTagName(s)[0];
-    if (d.getElementById(id)) return;
-    js = d.createElement(s); js.id = id;
-    js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
-    fjs.parentNode.insertBefore(js, fjs);
-  }(document, 'script', 'facebook-jssdk'));</script>
-
-  <!-- Your customer chat code -->
-  <div class="fb-customerchat"
-    attribution=setup_tool
-    page_id="754334534952419"
-    theme_color="#212121"
-    logged_in_greeting="Bula! How can I help you today?"
-    logged_out_greeting="Bula! How can I help you today?">
-  </div>
 
 <!-- PRE LOADER -->
 <div class="preloader">
@@ -307,6 +289,26 @@
      </div>
 </section>
 
+
+
+  <!-- Load Facebook SDK for JavaScript -->
+  <div id="fb-root"></div>
+  <script>(function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
+    fjs.parentNode.insertBefore(js, fjs);
+  }(document, 'script', 'facebook-jssdk'));</script>
+
+  <!-- Your customer chat code -->
+  <div class="fb-customerchat"
+    attribution=setup_tool
+    page_id="754334534952419"
+    theme_color="#212121"
+    logged_in_greeting="Bula! How can I help you today?"
+    logged_out_greeting="Bula! How can I help you today?">
+  </div>
 
 <!-- SCRIPTS -->
 <script src="js/jquery.js"></script>
